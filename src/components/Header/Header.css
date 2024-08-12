@@ -1,0 +1,76 @@
+.header {
+    height: 70vh;
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes slide {
+    0% { background-image: url('/src/assets/moviesImage1.jpg'); }
+    33.33% { background-image: url('/src/assets/moviesImage1.jpg'); }
+    33.34% { background-image: url('/src/assets/moviesImage2.jpg'); }
+    66.66% { background-image: url('/src/assets/moviesImage2.jpg'); }
+    66.67% { background-image: url('/src/assets/moviesImage3.jpg'); }
+    100% { background-image: url('/src/assets/moviesImage3.jpg'); }
+}
+
+.header {
+    animation: slide 9s infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+
+}
+
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+}
+
+@media(max-width:1050px){
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media(max-width:750px){
+    
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}

@@ -1,0 +1,90 @@
+.movie {
+    height: 30vw;
+    margin: 40px auto;
+    position: relative;
+}
+
+.movie-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 28%;
+    left: 28vw;
+    animation: fadeIn 3s;
+}
+.movie-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+
+.movie-contents p{
+    color: white;
+    font-size: 1vw;
+
+}
+
+.movie-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 0.6vw 4vw;
+    background-color: white;
+    font-size: max(1.8vw, 18px);
+    border-radius: 20px;
+}
+
+@media(max-width:1050px){
+    .movie-contents{
+        max-width: 45%;
+    }
+}
+@media(max-width:750px){
+    
+    .movie-contents{
+        max-width: 65%;
+    }
+    .movie-contents{
+        display: none;
+    }
+    .movie-contents button{
+        padding: 2vw 4vw;
+    }
+}
+
+.food-display{
+    margin-top: 30px;
+}
+
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+
+.food-display-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow: scroll;
+}
+
+.food-display-list::-webkit-scrollbar{
+    display: none;
+}
+
+.food-display-list button{
+    border: none;
+    color: #f6efef;
+    font-weight: 500;
+    padding: 0.6vw 4vw;
+    background-color: rgb(248, 68, 100);
+    font-size: max(1.8vw, 18px);
+    border-radius: 20px;
+}

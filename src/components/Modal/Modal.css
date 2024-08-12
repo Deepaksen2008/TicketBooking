@@ -1,0 +1,86 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.model {
+  display: flex;
+  gap: 35px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+.modal-select {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.modal-select label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-select select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.ticket-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.ticket-controls button {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ticket-controls button:hover {
+  background-color: #f0f0f0;
+}
+
+.modal-close, .modal-book {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.modal-close {
+  background-color: #f44336;
+  color: white;
+}
+
+.modal-book {
+  background-color: #4caf50;
+  color: white;
+}
