@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '@coreui/coreui/dist/css/coreui.min.css'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import { Route, Routes } from 'react-router-dom'
