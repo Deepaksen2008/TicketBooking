@@ -8,10 +8,9 @@ import OrderPlace from './components/pages/OrderPlace/OrderPlace'
 
 const App = () => {
 
-
   return (
     <>
-        <Navbar />
+      <Navbar />
       <div className='app'>
         <Routes>
           <Route path='/' element={<Home />} />
